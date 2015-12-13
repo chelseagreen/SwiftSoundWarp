@@ -45,38 +45,55 @@
                                     <rect key="frame" x="254" y="441" width="92" height="20.5"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMF-gE-o5a">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="247" y="469" width="107" height="20.5"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6FT-dn-hl8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Ne-eU-xst"/>
+                            <constraint firstItem="OMF-gE-o5a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VR7-Ir-NS4"/>
                             <constraint firstItem="4da-XR-zb8" firstAttribute="top" secondItem="6FT-dn-hl8" secondAttribute="bottom" constant="100" id="XaN-Ae-E7c"/>
                             <constraint firstItem="ds5-1y-ub4" firstAttribute="top" secondItem="6FT-dn-hl8" secondAttribute="bottom" constant="10" id="Xde-Ds-FHd"/>
                             <constraint firstItem="4da-XR-zb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDa-BQ-8Dl"/>
+                            <constraint firstItem="OMF-gE-o5a" firstAttribute="top" secondItem="6FT-dn-hl8" secondAttribute="bottom" constant="10" id="ljh-zB-X2I"/>
                             <constraint firstItem="ds5-1y-ub4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCo-Qw-Jbe"/>
                             <constraint firstItem="6FT-dn-hl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAU-dQ-PgW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6FT-dn-hl8"/>
+                                <exclude reference="OMF-gE-o5a"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="6Ne-eU-xst"/>
                                 <exclude reference="yAU-dQ-PgW"/>
+                                <exclude reference="Xde-Ds-FHd"/>
+                                <exclude reference="VR7-Ir-NS4"/>
+                                <exclude reference="ljh-zB-X2I"/>
                                 <exclude reference="XaN-Ae-E7c"/>
                                 <exclude reference="lDa-BQ-8Dl"/>
-                                <exclude reference="Xde-Ds-FHd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="6FT-dn-hl8"/>
+                                <include reference="OMF-gE-o5a"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="6Ne-eU-xst"/>
                                 <include reference="yAU-dQ-PgW"/>
+                                <include reference="Xde-Ds-FHd"/>
+                                <include reference="VR7-Ir-NS4"/>
+                                <include reference="ljh-zB-X2I"/>
                                 <include reference="XaN-Ae-E7c"/>
                                 <include reference="lDa-BQ-8Dl"/>
-                                <include reference="Xde-Ds-FHd"/>
                             </mask>
                         </variation>
                     </view>
@@ -85,6 +102,7 @@
                         <outlet property="recordButton" destination="6FT-dn-hl8" id="b9h-SI-W7H"/>
                         <outlet property="recordinginProgress" destination="ds5-1y-ub4" id="mlL-8U-WqN"/>
                         <outlet property="stopButton" destination="4da-XR-zb8" id="mAc-UB-B9u"/>
+                        <outlet property="tapME" destination="OMF-gE-o5a" id="5Uq-gF-dsS"/>
                         <segue destination="M2S-Rg-si0" kind="show" identifier="stopRecording" id="N1S-bA-ZmA"/>
                     </connections>
                 </viewController>
